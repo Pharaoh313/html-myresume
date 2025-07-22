@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: /sitemap.xml
+
+# Main pages
+Allow: /index.html
+Allow: /hobbies.html
+Allow: /contact-me.html
+
+# Allow images
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.png
+Allow: /*.gif
+
+# Crawl delay (optional - 1 second)
+Crawl-delay: 1

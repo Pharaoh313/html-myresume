@@ -1,37 +1,179 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Hobbies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Najzon Weaver's personal hobbies and interests including anime, sports, and vegetarian food exploration.">
+    <meta name="keywords" content="Najzon Weaver, hobbies, anime, sports, vegetarian, DragonBall, LeBron James">
+    <meta name="author" content="Najzon Weaver">
+    <title>My Hobbies - Najzon Weaver</title>
+    
+    <style>
+        /* CSS Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            font-weight: 300;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #2980b9;
+            margin: 20px 0 10px 0;
+            font-size: 1.4em;
+        }
+        
+        .hobby-item {
+            background: #f8f9fa;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .hobby-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hobby-item h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .hobby-icon {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+        
+        .hobby-item p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            color: #555;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+        
+        .navigation {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            margin: 0 15px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+        
+        .nav-link.home {
+            background-color: #27ae60;
+        }
+        
+        .nav-link.home:hover {
+            background-color: #229954;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .hobby-item {
+                padding: 20px;
+            }
+            
+            .nav-link {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hobbies</h1>
+    <div class="container">
+        <header>
+            <h1>My Hobbies & Interests</h1>
+        </header>
 
-    <hr>
-    <br>
-    <br>
-    <br>
+        <main>
+            <article class="hobby-item">
+                <h2><span class="hobby-icon">📺</span>Anime Enthusiast</h2>
+                <p>Watching anime has been a pastime since I was a child. My current favorite is <span class="highlight">"That Time I Got Reincarnated As A Slime"</span> but my all-time favorite is the <span class="highlight">"DragonBall"</span> series. I enjoy exploring different genres from action-packed shonen to thoughtful slice-of-life stories.</p>
+            </article>
 
-    <ol>
-        <li><h3>Anime Enthusiast:</h3>
-        <p>Watching anime has been a past time since I was a child. My current favorite is "That Time I Got Reincarnated As A Slime" but my all time favorite is the "DragonBall" series.</p>
-        </li>
-        <br>
-        <br>
-        <br>
-        <br>
-        <li><h3>Sports Fan:</h3>
-             <p>Enjoys watching and playing football and basketball, with a growing interest in baseball. Favorite player is LeBron James.</p>
-        </li>
-        <br>
-        <br>
-        <br>
-        <br>
+            <article class="hobby-item">
+                <h2><span class="hobby-icon">🏀</span>Sports Fan</h2>
+                <p>I enjoy watching and playing football and basketball, with a growing interest in baseball. My favorite player is <span class="highlight">LeBron James</span> - his leadership on and off the court is truly inspiring. Sports teach valuable lessons about teamwork, perseverance, and strategic thinking.</p>
+            </article>
 
-        <li><h3>Food Explorer:</h3>
-        <p>I am a vegetarian, so I love exploring vegan restaurants and those offering vegetarian options.</p>
-        </li>
-    </ol>
-    
-    
+            <article class="hobby-item">
+                <h2><span class="hobby-icon">🥗</span>Food Explorer</h2>
+                <p>I am a vegetarian, so I love exploring vegan restaurants and those offering creative vegetarian options. Discovering new plant-based cuisines and flavors is always an adventure. I enjoy trying everything from local farm-to-table restaurants to international vegetarian dishes.</p>
+            </article>
+        </main>
+        
+        <nav class="navigation">
+            <a href="./index.html" class="nav-link home" aria-label="Return to homepage">Back to Resume</a>
+            <a href="./contact-me.html" class="nav-link" aria-label="Contact information">Contact Me</a>
+        </nav>
+    </div>
 </body>
 </html>

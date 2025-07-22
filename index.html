@@ -2,71 +2,286 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>My Resume</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Najzon Weaver - Mail Carrier transitioning to Software Engineering. Professional resume showcasing skills in time management, customer service, and leadership.">
+        <meta name="keywords" content="Najzon Weaver, mail carrier, software engineer, USPS, resume, professional">
+        <meta name="author" content="Najzon Weaver">
+        <title>Najzon Weaver - Resume | Mail Carrier & Aspiring Software Engineer</title>
+        
+        <!-- Preload critical resources -->
+        <link rel="preload" href="./NW PROFILE Photo.jpg" as="image">
+        
+        <style>
+            /* CSS Reset and Base Styles */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.6;
+                color: #333;
+                background-color: #f8f9fa;
+                padding: 20px;
+                max-width: 900px;
+                margin: 0 auto;
+            }
+            
+            .container {
+                background: white;
+                padding: 40px;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+            }
+            
+            h1 {
+                color: #2c3e50;
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 2.5em;
+                font-weight: 300;
+            }
+            
+            h2 {
+                color: #34495e;
+                border-bottom: 2px solid #3498db;
+                padding-bottom: 5px;
+                margin: 30px 0 15px 0;
+                font-size: 1.5em;
+            }
+            
+            h3 {
+                color: #2980b9;
+                margin: 15px 0 5px 0;
+            }
+            
+            h4 {
+                color: #7f8c8d;
+                font-style: italic;
+                margin-bottom: 10px;
+            }
+            
+            .profile-section {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            
+            .profile-image {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 4px solid #3498db;
+                margin-bottom: 20px;
+                transition: transform 0.3s ease;
+            }
+            
+            .profile-image:hover {
+                transform: scale(1.05);
+            }
+            
+            .summary {
+                font-size: 1.1em;
+                text-align: center;
+                font-style: italic;
+                color: #555;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            
+            ul {
+                margin-left: 20px;
+                margin-bottom: 15px;
+            }
+            
+            li {
+                margin-bottom: 8px;
+            }
+            
+            .work-experience-item {
+                background: #f8f9fa;
+                padding: 20px;
+                margin: 15px 0;
+                border-radius: 8px;
+                border-left: 4px solid #3498db;
+            }
+            
+            .skills-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 15px;
+                margin-top: 15px;
+            }
+            
+            .skill-item {
+                background: #ecf0f1;
+                padding: 15px;
+                border-radius: 8px;
+                border-left: 3px solid #3498db;
+            }
+            
+            .navigation {
+                text-align: center;
+                margin-top: 30px;
+                padding-top: 20px;
+                border-top: 1px solid #ecf0f1;
+            }
+            
+            .nav-link {
+                display: inline-block;
+                margin: 0 15px;
+                padding: 10px 20px;
+                background-color: #3498db;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s ease, transform 0.2s ease;
+                font-weight: 500;
+            }
+            
+            .nav-link:hover {
+                background-color: #2980b9;
+                transform: translateY(-2px);
+            }
+            
+            .certification-badge {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                padding: 10px 15px;
+                border-radius: 20px;
+                display: inline-block;
+                font-weight: 500;
+            }
+            
+            /* Responsive Design */
+            @media (max-width: 768px) {
+                body {
+                    padding: 10px;
+                }
+                
+                .container {
+                    padding: 20px;
+                }
+                
+                h1 {
+                    font-size: 2em;
+                }
+                
+                .skills-grid {
+                    grid-template-columns: 1fr;
+                }
+                
+                .nav-link {
+                    display: block;
+                    margin: 10px 0;
+                }
+            }
+            
+            /* Print Styles */
+            @media print {
+                body {
+                    background: white;
+                    color: black;
+                }
+                
+                .container {
+                    box-shadow: none;
+                    border: 1px solid #ccc;
+                }
+                
+                .nav-link {
+                    display: none;
+                }
+            }
+        </style>
     </head>
 
     <body>
-        <h1>Najzon Weaver</h1>
-        <img src="./NW PROFILE Photo.jpg" alt="image" style="width: 200px;">
-        <h2>Summary</h2>
-        <p>As a mail carrier for the United States Postal Service, I excel in time management, organization, and customer service. Currently studying to become a software engineer, I am eager to leverage these skills in the tech industry.</p>
-        <hr/>
+        <div class="container">
+            <header class="profile-section">
+                <h1>Najzon Weaver</h1>
+                <img src="./NW PROFILE Photo.jpg" 
+                     alt="Najzon Weaver - Professional Profile Photo" 
+                     class="profile-image"
+                     loading="lazy"
+                     width="200" 
+                     height="200">
+                <div class="summary">
+                    <p>As a mail carrier for the United States Postal Service, I excel in time management, organization, and customer service. Currently studying to become a software engineer, I am eager to leverage these skills in the tech industry.</p>
+                </div>
+            </header>
 
-        <h2>Education</h2>
-        <ul>
-            <li>Mount Clemens High School(2011-2015)</li>
-        </ul>
-        <br>
-        <hr>
-        <h2>Work Experience</h2>
-        <ul>
-            <li>
-                <h3>Shift Lead(Afternoon) - Pokeworks</h3>
-                    <h4>May 2019 - August 2020</h4>
+            <main>
+                <section>
+                    <h2>Education</h2>
                     <ul>
-                        <li>Oversaw nightly operations to ensure smooth and efficient service.</li>
-                        <li> Managed inventory levels, ensuring all ingredients and supplies were adequately stocked.</li>
-                        <li>Supervised and supported team members, fostering a collaborative and productive work environment.</li>
-                        <li> Handled cash management, including counting drawers and making nightly deposits.</li>
-                        <li>Ensured compliance with health and safety regulations.</li>
+                        <li><strong>Mount Clemens High School</strong> (2011-2015)</li>
                     </ul>
-                           
-                            
-                           
-                            
-            </li>
-            <br>
+                </section>
 
-            <li><h3>Mail Carrier - USPS</h3>
-                <h4>August 2020 - Present</h4>
-                <ul>
-                    <li>Delivered mail and packages to residential and business addresses.</li>
-                    <li>Ensured the security and confidentiality of all mail.</li>
-                    <li>Managed and organized deliveries for efficiency.</li>
-                    <li>Provided excellent customer service, resolving delivery issues.</li>
-                </ul>
-            </li>
-        </ul>
-        <hr>
-        <br>
-        <h2>Skills</h2>
-            <ul>
-                <li>Leadership: Supervising team members and ensuring smooth operations.</li>
-                <li>Time Management: Efficiently managing schedules and tasks</li>
-                <li> Customer Service: Providing excellent service and resolving customer inquiries.</li>
-                <li> Organizational Skills: Managing inventory and organizing tasks for efficiency.</li>
-                <li>Attention to Detail: Ensuring accuracy and security in various responsibilities</li>
-            </ul>
-        <hr> <br>
-        <h2>Certifications</h2>
-            <ul>
-                <li>Full Stack Web Development Certificate</li>
-            </ul>
-            <hr>
-            <br>
-            <a href="./hobbies.html">Hobbies</a>
-            <br>
-            <a href="./contact-me.html">Contact Me</a>
-           
+                <section>
+                    <h2>Work Experience</h2>
+                    
+                    <article class="work-experience-item">
+                        <h3>Shift Lead (Afternoon) - Pokeworks</h3>
+                        <h4>May 2019 - August 2020</h4>
+                        <ul>
+                            <li>Oversaw nightly operations to ensure smooth and efficient service</li>
+                            <li>Managed inventory levels, ensuring all ingredients and supplies were adequately stocked</li>
+                            <li>Supervised and supported team members, fostering a collaborative and productive work environment</li>
+                            <li>Handled cash management, including counting drawers and making nightly deposits</li>
+                            <li>Ensured compliance with health and safety regulations</li>
+                        </ul>
+                    </article>
+
+                    <article class="work-experience-item">
+                        <h3>Mail Carrier - USPS</h3>
+                        <h4>August 2020 - Present</h4>
+                        <ul>
+                            <li>Delivered mail and packages to residential and business addresses</li>
+                            <li>Ensured the security and confidentiality of all mail</li>
+                            <li>Managed and organized deliveries for efficiency</li>
+                            <li>Provided excellent customer service, resolving delivery issues</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section>
+                    <h2>Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <strong>Leadership:</strong> Supervising team members and ensuring smooth operations
+                        </div>
+                        <div class="skill-item">
+                            <strong>Time Management:</strong> Efficiently managing schedules and tasks
+                        </div>
+                        <div class="skill-item">
+                            <strong>Customer Service:</strong> Providing excellent service and resolving customer inquiries
+                        </div>
+                        <div class="skill-item">
+                            <strong>Organizational Skills:</strong> Managing inventory and organizing tasks for efficiency
+                        </div>
+                        <div class="skill-item">
+                            <strong>Attention to Detail:</strong> Ensuring accuracy and security in various responsibilities
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Certifications</h2>
+                    <div class="certification-badge">
+                        Full Stack Web Development Certificate
+                    </div>
+                </section>
+            </main>
+
+            <nav class="navigation">
+                <a href="./hobbies.html" class="nav-link" aria-label="View my hobbies">My Hobbies</a>
+                <a href="./contact-me.html" class="nav-link" aria-label="Contact information">Contact Me</a>
+            </nav>
+        </div>
     </body>
 </html>
